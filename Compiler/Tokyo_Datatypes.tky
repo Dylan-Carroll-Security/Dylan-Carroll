@@ -1,0 +1,16 @@
+
+##TOKYO Example
+##The program is lexically correct about the TOKYO city 
+
+
+main&(){
+		int FoundationYear$;
+		float Area$, HDI$;
+		string CountryName$;
+
+		FoundationYear = -7000;
+		Area = 492.0;
+		HDI = 0.871;
+		CountryName = "Japan";
+		print&(CountryName);
+}
