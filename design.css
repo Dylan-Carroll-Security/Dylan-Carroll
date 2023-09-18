@@ -1,6 +1,7 @@
 .column {
   float: left;
   width: 33%;
+  min-height: 300px;
 }
 
 
