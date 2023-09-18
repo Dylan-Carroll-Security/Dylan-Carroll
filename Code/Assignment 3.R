@@ -95,17 +95,16 @@ student.ode.rk4 <- function(x){
 
   
   i1 = h *  ( (0.2*cos(2*xTemp+h/2) + 0.4*sin(2*xTemp+h/2) + 2.8*exp(-xTemp+h/2)))
- # i1 = i1+ ( (0.2*cos(2*yTemp+(1/2)*i*h) + 0.4*sin(2*yTemp+(1/2)*i*h) + 2.8*exp(-yTemp+(1/2)*i*h))) #second ones are the for the y portion of the 
+
   
   
   i2 = h *  ( (0.2*cos(2*xTemp+h/2) + 0.4*sin(2*xTemp+h/2) + 2.8*exp(-xTemp+h/2)))  
- # i2 = i2+  (  (0.2*cos(2*yTemp+(1/2)*i1*h) + 0.4*sin(2*yTemp+(1/2)*i1*h) + 2.8*exp(-yTemp+(1/2)*i*h)))
+
   
   
   
   i3 = h *   ( (0.2*cos(2*xTemp+h) + 0.4*sin(2*xTemp+h) + 2.8*exp(-xTemp+h)))   
- # i3 =  i3 + (  (0.2*cos(2*xTemp+h*i2) + 0.4*sin(2*xTemp+h*i2) + 2.8*exp(-xTemp+h*i2)))   
-  
+
   
   
   yTemp <- yTemp + (h*(1/6))*(i + 2*i1 + 2*i2 + i3 )
