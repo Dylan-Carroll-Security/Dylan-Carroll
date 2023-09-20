@@ -19,13 +19,6 @@ h3{text-align: center;}
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-* {
- 
-}
-
-body {
-  
-}
 
 h1 {
   font-family: "Montserrat Medium";
@@ -37,6 +30,12 @@ h1 {
   100% {
     transform: scale(1);
   }
+}
+#round {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 25px;
+
 }
 
 span {
